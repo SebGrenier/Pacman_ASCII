@@ -7,8 +7,6 @@
 
 using namespace std;
 
-bool is_running = true;
-
 int main(int argc, char** argv)
 {
 	// Load the file passed as argument
@@ -22,11 +20,13 @@ int main(int argc, char** argv)
 	try
 	{
 		the_game.LoadLevel(filename);
+		the_game.InitLevel();
 
 		// Run the game
-		while (is_running)
+		while (the_game.IsRunning())
 		{
 			// Process key events
+			the_game.HandleInputs();
 
 			// Update state
 

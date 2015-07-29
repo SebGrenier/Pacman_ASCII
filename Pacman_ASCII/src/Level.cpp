@@ -69,3 +69,15 @@ void Level::Draw(void) const
 		cout << endl;
 	}
 }
+
+char Level::GetCharAt(int x, int y) const
+{
+	// TODO: Check out of bounds
+	return _level_data[y][x];
+}
+
+void Level::SetCharAt(int x, int y, char value)
+{
+	// TODO: Check out of bounds
+	_level_data[y][x] = value;
+}

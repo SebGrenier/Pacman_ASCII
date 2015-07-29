@@ -68,15 +68,20 @@
   <ItemGroup>
     <ClCompile Include="src\ConsoleUtils.cpp" />
     <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\KeyboardUtils.cpp" />
     <ClCompile Include="src\Level.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Pacman.cpp" />
     <ClCompile Include="src\StringUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ConsoleUtils.h" />
     <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\KeyboardUtils.h" />
     <ClInclude Include="src\Level.h" />
+    <ClInclude Include="src\Pacman.h" />
     <ClInclude Include="src\StringUtils.h" />
+    <ClInclude Include="src\Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
