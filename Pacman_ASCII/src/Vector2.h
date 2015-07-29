@@ -30,6 +30,19 @@ public:
 		return Vector2(x - rhs.x, y - rhs.y);
 	}
 
+	bool operator == (const Vector2 &rhs) const
+	{
+		// TODO : Explicit specialization for floating point
+		// with epsilon.
+		return x == rhs.x && y == rhs.y;
+	}
+
+	static Vector2<T> ZERO(void)
+	{
+		static Vector2 vec(0, 0);
+		return vec;
+	}
+
 private:
 
 };

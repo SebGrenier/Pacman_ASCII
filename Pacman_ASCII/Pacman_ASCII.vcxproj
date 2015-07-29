@@ -68,6 +68,8 @@
   <ItemGroup>
     <ClCompile Include="src\ConsoleUtils.cpp" />
     <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\Ghost.cpp" />
+    <ClCompile Include="src\GhostAI.cpp" />
     <ClCompile Include="src\KeyboardUtils.cpp" />
     <ClCompile Include="src\Level.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -77,6 +79,8 @@
   <ItemGroup>
     <ClInclude Include="src\ConsoleUtils.h" />
     <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Ghost.h" />
+    <ClInclude Include="src\GhostAI.h" />
     <ClInclude Include="src\KeyboardUtils.h" />
     <ClInclude Include="src\Level.h" />
     <ClInclude Include="src\Pacman.h" />

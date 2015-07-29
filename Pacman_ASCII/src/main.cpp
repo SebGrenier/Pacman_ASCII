@@ -4,11 +4,16 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include <random>
+#include <time.h>
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
+	// Init random seed
+	srand(time(0));
+
 	// Load the file passed as argument
 	if (argc != 2)
 	{
@@ -29,6 +34,7 @@ int main(int argc, char** argv)
 			the_game.HandleInputs();
 
 			// Update state
+			the_game.Update();
 
 			// Draw
 			the_game.Draw();

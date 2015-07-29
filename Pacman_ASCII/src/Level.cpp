@@ -81,3 +81,19 @@ void Level::SetCharAt(int x, int y, char value)
 	// TODO: Check out of bounds
 	_level_data[y][x] = value;
 }
+
+char Level::GetCharAt(const Vector2<int> &pos) const
+{
+	return GetCharAt(pos.x, pos.y);
+}
+
+void Level::SetCharAt(const Vector2<int> &pos, char value)
+{
+	SetCharAt(pos.x, pos.y, value);
+}
+
+bool Level::IsInsideLevel(const Vector2<int> &pos) const
+{
+	return pos.x >= 0 && pos.x < _width &&
+		pos.y >= 0 && pos.y < _height;
+}
